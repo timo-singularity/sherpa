@@ -7,7 +7,13 @@ From: timo-singularity/rivet
 
   Container with Sherpa
 
+%environment
+  
+  PYTHONPATH=/usr/local/lib/python3.6/site-packages:$PYTHONPATH
+  export PYTHONPATH
+
 %post
+
   yum -y install swig sqlite-devel
 
   # install lhapdf
