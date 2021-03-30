@@ -1,6 +1,5 @@
-diff -Naur AddOns/Python/MEProcess.i AddOns_patched/Python/MEProcess.i
---- AddOns/Python/MEProcess.i	2020-02-24 11:04:38.000000000 +0100
-+++ AddOns_patched/Python/MEProcess.i	2021-03-30 13:57:07.172707923 +0200
+--- ./AddOns/Python/MEProcess.i	2020-02-24 11:04:38.000000000 +0100
++++ ./AddOns/Python/MEProcess.i.patched	2021-03-30 14:18:34.753473499 +0200
 @@ -60,11 +60,20 @@
  	    PyErr_SetString(PyExc_TypeError,"Momenta must have four components");
  	    return NULL;
