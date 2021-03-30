@@ -30,6 +30,8 @@ From: timo-singularity/rivet
   tar xvf SHERPA-MC-2.2.10.tar.gz
   rm SHERPA-MC-2.2.10.tar.gz
   cd SHERPA-MC-2.2.10
+  wget https://raw.githubusercontent.com/timo-singularity/sherpa/master/fix-memory-leak-in-python-interface.patch
+  patch -p1 < fix-memory-leak-in-python-interface.patch
   ./configure --prefix=/usr/local \
     --enable-pyext \
     --enable-analysis \
